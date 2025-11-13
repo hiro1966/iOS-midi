@@ -16,16 +16,18 @@ struct StepGridView: View {
             let cellWidth = geometry.size.width / CGFloat(numberOfSteps)
             let cellHeight = geometry.size.height / CGFloat(numberOfTracks)
             
-            ZStack {
+            ZStack(alignment: .topLeading) {
                 // Background grid
-                ForEach(0..<numberOfTracks, id: \.self) { track in
-                    ForEach(0..<numberOfSteps, id: \.self) { step in
-                        Rectangle()
-                            .fill(getCellColor(track: track, step: step))
-                            .frame(width: cellWidth, height: cellHeight)
-                            .border(Color.gray.opacity(0.3), width: 0.5)
-                            .position(x: CGFloat(step) * cellWidth + cellWidth / 2,
-                                    y: CGFloat(track) * cellHeight + cellHeight / 2)
+                VStack(spacing: 0) {
+                    ForEach(0..<numberOfTracks, id: \.self) { track in
+                        HStack(spacing: 0) {
+                            ForEach(0..<numberOfSteps, id: \.self) { step in
+                                Rectangle()
+                                    .fill(getCellColor(track: track, step: step))
+                                    .frame(width: cellWidth, height: cellHeight)
+                                    .border(Color.gray.opacity(0.3), width: 0.5)
+                            }
+                        }
                     }
                 }
                 
@@ -44,13 +46,14 @@ struct StepGridView: View {
                 // Current step indicator
                 if engine.isPlaying {
                     Rectangle()
-                        .fill(Color.red.opacity(0.3))
-                        .frame(width: cellWidth, height: geometry.size.height)
-                        .position(x: CGFloat(engine.currentStep) * cellWidth + cellWidth / 2,
-                                y: geometry.size.height / 2)
+                        .fill(Color.red.opacity(0.25))
+                        .frame(width: cellWidth - 1, height: geometry.size.height)
+                        .offset(x: CGFloat(engine.currentStep) * cellWidth + 0.5)
                         .allowsHitTesting(false)
+                        .animation(.linear(duration: 0.05), value: engine.currentStep)
                 }
             }
+            .contentShape(Rectangle())
             .gesture(
                 DragGesture(minimumDistance: 0)
                     .onChanged { value in
@@ -67,9 +70,14 @@ struct StepGridView: View {
         // Highlight every 4 steps
         let isAccented = step % 4 == 0
         
-        // Alternate track colors
-        let baseColor = track % 2 == 0 ? Color.gray.opacity(0.1) : Color.gray.opacity(0.2)
-        let accentColor = track % 2 == 0 ? Color.gray.opacity(0.15) : Color.gray.opacity(0.25)
+        // Alternate track colors for better visibility
+        let evenTrackBase = Color.gray.opacity(0.05)
+        let oddTrackBase = Color.gray.opacity(0.12)
+        let evenTrackAccent = Color.gray.opacity(0.1)
+        let oddTrackAccent = Color.gray.opacity(0.18)
+        
+        let baseColor = track % 2 == 0 ? evenTrackBase : oddTrackBase
+        let accentColor = track % 2 == 0 ? evenTrackAccent : oddTrackAccent
         
         // Check if dragging over this cell
         if let dragStart = dragStart, let dragEnd = dragEnd {
@@ -77,7 +85,7 @@ struct StepGridView: View {
             let endStep = max(dragStart.step, dragEnd.step)
             
             if track == dragStart.track && step >= startStep && step <= endStep {
-                return Color.blue.opacity(0.3)
+                return Color.blue.opacity(0.4)
             }
         }
         
@@ -99,30 +107,37 @@ struct StepGridView: View {
     }
     
     private func handleDragEnd(value: DragGesture.Value, cellWidth: CGFloat, cellHeight: CGFloat) {
-        guard let start = dragStart, let end = dragEnd else {
+        defer {
             dragStart = nil
             dragEnd = nil
+        }
+        
+        guard let start = dragStart, let end = dragEnd else {
             return
         }
         
         // Only allow horizontal dragging on the same track
-        if start.track == end.track {
-            let pitch = scaleNotes[start.track]
-            let startStep = min(start.step, end.step)
-            let endStep = max(start.step, end.step)
-            let length = endStep - startStep + 1
-            
-            // Check if clicking on existing note to delete it
-            if length == 1, let existingNote = pattern.getNoteAtPosition(pitch: pitch, step: startStep) {
-                pattern.removeNote(existingNote)
-            } else {
-                // Add new note
-                pattern.addNote(pitch: pitch, startStep: startStep, length: length)
-            }
+        guard start.track == end.track else {
+            return
         }
         
-        dragStart = nil
-        dragEnd = nil
+        guard scaleNotes.indices.contains(start.track) else {
+            return
+        }
+        
+        let pitch = scaleNotes[start.track]
+        let startStep = min(start.step, end.step)
+        let endStep = max(start.step, end.step)
+        let length = endStep - startStep + 1
+        
+        // Check if tapping on existing note to delete it
+        if length == 1, let existingNote = pattern.getNoteAtPosition(pitch: pitch, step: startStep) {
+            // Delete the note
+            pattern.removeNote(existingNote)
+        } else {
+            // Add new note
+            pattern.addNote(pitch: pitch, startStep: startStep, length: length)
+        }
     }
 }
 
@@ -133,11 +148,25 @@ struct NoteRectangle: View {
     let cellHeight: CGFloat
     
     var body: some View {
-        RoundedRectangle(cornerRadius: 4)
-            .fill(Color.blue)
-            .frame(width: cellWidth * CGFloat(note.length) - 2,
-                   height: cellHeight - 2)
-            .position(x: CGFloat(note.startStep) * cellWidth + (cellWidth * CGFloat(note.length)) / 2,
-                     y: CGFloat(trackIndex) * cellHeight + cellHeight / 2)
+        RoundedRectangle(cornerRadius: 6)
+            .fill(
+                LinearGradient(
+                    colors: [Color.blue, Color.blue.opacity(0.8)],
+                    startPoint: .top,
+                    endPoint: .bottom
+                )
+            )
+            .overlay(
+                RoundedRectangle(cornerRadius: 6)
+                    .strokeBorder(Color.blue.opacity(0.8), lineWidth: 1)
+            )
+            .frame(
+                width: cellWidth * CGFloat(note.length) - 4,
+                height: cellHeight - 4
+            )
+            .offset(
+                x: CGFloat(note.startStep) * cellWidth + 2,
+                y: CGFloat(trackIndex) * cellHeight + 2
+            )
     }
 }
