@@ -111,7 +111,7 @@ class MIDIManager: ObservableObject {
         guard selectedDevice != nil else { return }
         
         for note in 0...127 {
-            sendNoteOff(UInt8(note))
+            sendNoteOff(note: UInt8(note))
         }
     }
 }
