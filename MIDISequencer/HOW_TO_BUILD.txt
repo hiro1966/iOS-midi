@@ -1,0 +1,55 @@
+====================================
+  MIDI Step Sequencer ビルド方法
+====================================
+
+【必要なもの】
+✓ Mac (macOS 13.0以降)
+✓ Xcode 15.0以降 (App Storeから無料)
+✓ iPhone/iPad (iOS 15.0以降)
+✓ Apple ID (無料でOK)
+
+【ビルド手順】
+
+1. プロジェクトを開く
+   → Finderで "MIDISequencer.xcodeproj" をダブルクリック
+
+2. iPhone/iPadをMacに接続
+   → USBケーブルで接続
+   → デバイスで「信頼」をタップ
+   → Xcode上部でデバイスを選択
+
+3. ビルド＆実行
+   → Xcode左上の ▶️ ボタンをクリック
+   → または Command + R
+
+【初回のみ必要な設定】
+
+A. 開発チームの設定
+   1. Xcode左側のプロジェクトアイコンをクリック
+   2. 中央で "Signing & Capabilities" タブ
+   3. "Team" で "Add an Account..." を選択
+   4. Apple IDでサインイン
+
+B. デバイスで開発元を信頼
+   1. デバイスの設定アプリを開く
+   2. 一般 → VPNとデバイス管理
+   3. Apple IDを選択して「信頼」
+
+【MIDI機器の接続】
+
+USB:
+  Lightning-USBアダプタ経由で接続
+
+Bluetooth:
+  設定 → Bluetooth → ペアリング
+
+【トラブルシューティング】
+
+詳細は以下のファイルを参照：
+- QUICK_START.md (クイックガイド)
+- BUILD_GUIDE.md (詳細ガイド)
+- README.md (機能説明)
+
+====================================
+Happy Music Making! 🎹✨
+====================================
