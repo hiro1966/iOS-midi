@@ -59,11 +59,15 @@ class SequencerPattern: ObservableObject {
 }
 
 // MIDI Device representation
-struct MIDIDevice: Identifiable, Equatable {
+struct MIDIDevice: Identifiable, Equatable, Hashable {
     let id: Int // MIDI endpoint reference
     let name: String
     
     static func == (lhs: MIDIDevice, rhs: MIDIDevice) -> Bool {
         return lhs.id == rhs.id
+    }
+    
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(id)
     }
 }
