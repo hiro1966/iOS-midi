@@ -107,7 +107,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A100020 /* Build configuration list for PBXNativeTarget "MIDISequencer" */;
 			buildPhases = (
-				A0FFFFB /* Sources */,
+				A100030 /* Sources */,
 				A0FFFFC /* Frameworks */,
 				A0FFFFD /* Resources */,
 			);
@@ -165,7 +165,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		A0FFFFB /* Sources */ = {
+		A100030 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
