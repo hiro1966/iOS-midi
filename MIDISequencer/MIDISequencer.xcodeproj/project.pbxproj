@@ -7,33 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A100001 /* MIDISequencerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A100000 /* MIDISequencerApp.swift */; };
-		A100003 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A100002 /* ContentView.swift */; };
-		A100005 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A100004 /* Assets.xcassets */; };
-		A100010 /* MusicTheory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000F /* MusicTheory.swift */; };
-		A100012 /* SequencerModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = A100011 /* SequencerModels.swift */; };
-		A100014 /* MIDIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A100013 /* MIDIManager.swift */; };
-		A100016 /* SequencerEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = A100015 /* SequencerEngine.swift */; };
-		A100018 /* StepGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A100017 /* StepGridView.swift */; };
-		A10001A /* ControlPanelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A100019 /* ControlPanelView.swift */; };
+		B1001001 /* MIDISequencerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1001000 /* MIDISequencerApp.swift */; };
+		B1001003 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1001002 /* ContentView.swift */; };
+		B1001005 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1001004 /* Assets.xcassets */; };
+		B1001010 /* MusicTheory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B100100F /* MusicTheory.swift */; };
+		B1001012 /* SequencerModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1001011 /* SequencerModels.swift */; };
+		B1001014 /* MIDIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1001013 /* MIDIManager.swift */; };
+		B1001016 /* SequencerEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1001015 /* SequencerEngine.swift */; };
+		B1001018 /* StepGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1001017 /* StepGridView.swift */; };
+		B100101A /* ControlPanelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1001019 /* ControlPanelView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		A0FFFFF /* MIDISequencer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MIDISequencer.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		A100000 /* MIDISequencerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MIDISequencerApp.swift; sourceTree = "<group>"; };
-		A100002 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		A100004 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		A10000F /* MusicTheory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicTheory.swift; sourceTree = "<group>"; };
-		A100011 /* SequencerModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SequencerModels.swift; sourceTree = "<group>"; };
-		A100013 /* MIDIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MIDIManager.swift; sourceTree = "<group>"; };
-		A100015 /* SequencerEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SequencerEngine.swift; sourceTree = "<group>"; };
-		A100017 /* StepGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepGridView.swift; sourceTree = "<group>"; };
-		A100019 /* ControlPanelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlPanelView.swift; sourceTree = "<group>"; };
-		A10001B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B1000FFF /* MIDISequencer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MIDISequencer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1001000 /* MIDISequencerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MIDISequencerApp.swift; sourceTree = "<group>"; };
+		B1001002 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B1001004 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B100100F /* MusicTheory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicTheory.swift; sourceTree = "<group>"; };
+		B1001011 /* SequencerModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SequencerModels.swift; sourceTree = "<group>"; };
+		B1001013 /* MIDIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MIDIManager.swift; sourceTree = "<group>"; };
+		B1001015 /* SequencerEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SequencerEngine.swift; sourceTree = "<group>"; };
+		B1001017 /* StepGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepGridView.swift; sourceTree = "<group>"; };
+		B1001019 /* ControlPanelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlPanelView.swift; sourceTree = "<group>"; };
+		B100101B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		A0FFFFC /* Frameworks */ = {
+		B1000FFC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -43,73 +43,73 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		A0FFFFB /* MIDISequencer */ = {
+		B1000FF6 /* MIDISequencer */ = {
 			isa = PBXGroup;
 			children = (
-				A100001 /* MIDISequencer */,
-				A100000 /* Products */,
+				B1000FF7 /* MIDISequencer */,
+				B1000FF8 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		A100000 /* Products */ = {
+		B1000FF7 /* MIDISequencer */ = {
 			isa = PBXGroup;
 			children = (
-				A0FFFFF /* MIDISequencer.app */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		A100001 /* MIDISequencer */ = {
-			isa = PBXGroup;
-			children = (
-				A10001B /* Info.plist */,
-				A100000 /* MIDISequencerApp.swift */,
-				A10000E /* Models */,
-				A10000C /* Views */,
-				A10000D /* Services */,
-				A100004 /* Assets.xcassets */,
+				B100101B /* Info.plist */,
+				B1001000 /* MIDISequencerApp.swift */,
+				B1000FFA /* Models */,
+				B1000FFB /* Views */,
+				B1000FFC /* Services */,
+				B1001004 /* Assets.xcassets */,
 			);
 			path = MIDISequencer;
 			sourceTree = "<group>";
 		};
-		A10000C /* Views */ = {
+		B1000FF8 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A100002 /* ContentView.swift */,
-				A100017 /* StepGridView.swift */,
-				A100019 /* ControlPanelView.swift */,
+				B1000FFF /* MIDISequencer.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B1000FFA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B100100F /* MusicTheory.swift */,
+				B1001011 /* SequencerModels.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B1000FFB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B1001002 /* ContentView.swift */,
+				B1001017 /* StepGridView.swift */,
+				B1001019 /* ControlPanelView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
 		};
-		A10000D /* Services */ = {
+		B1000FFC /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				A100013 /* MIDIManager.swift */,
-				A100015 /* SequencerEngine.swift */,
+				B1001013 /* MIDIManager.swift */,
+				B1001015 /* SequencerEngine.swift */,
 			);
 			path = Services;
-			sourceTree = "<group>";
-		};
-		A10000E /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				A10000F /* MusicTheory.swift */,
-				A100011 /* SequencerModels.swift */,
-			);
-			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		A0FFFFE /* MIDISequencer */ = {
+		B1000FFE /* MIDISequencer */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A100020 /* Build configuration list for PBXNativeTarget "MIDISequencer" */;
+			buildConfigurationList = B1001020 /* Build configuration list for PBXNativeTarget "MIDISequencer" */;
 			buildPhases = (
-				A100030 /* Sources */,
-				A0FFFFC /* Frameworks */,
-				A0FFFFD /* Resources */,
+				B1000FFB /* Sources */,
+				B1000FFC /* Frameworks */,
+				B1000FFD /* Resources */,
 			);
 			buildRules = (
 			);
@@ -117,25 +117,25 @@
 			);
 			name = MIDISequencer;
 			productName = MIDISequencer;
-			productReference = A0FFFFF /* MIDISequencer.app */;
+			productReference = B1000FFF /* MIDISequencer.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		A0FFFFA /* Project object */ = {
+		B1000FFA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1500;
 				LastUpgradeCheck = 1500;
 				TargetAttributes = {
-					A0FFFFE = {
+					B1000FFE = {
 						CreatedOnToolsVersion = 15.0;
 					};
 				};
 			};
-			buildConfigurationList = A0FFFFD /* Build configuration list for PBXProject "MIDISequencer" */;
+			buildConfigurationList = B1000FFD /* Build configuration list for PBXProject "MIDISequencer" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -143,47 +143,47 @@
 				en,
 				Base,
 			);
-			mainGroup = A0FFFFB /* MIDISequencer */;
-			productRefGroup = A100000 /* Products */;
+			mainGroup = B1000FF6 /* MIDISequencer */;
+			productRefGroup = B1000FF8 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A0FFFFE /* MIDISequencer */,
+				B1000FFE /* MIDISequencer */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		A0FFFFD /* Resources */ = {
+		B1000FFD /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A100005 /* Assets.xcassets in Resources */,
+				B1001005 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		A100030 /* Sources */ = {
+		B1000FFB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A100003 /* ContentView.swift in Sources */,
-				A100010 /* MusicTheory.swift in Sources */,
-				A100012 /* SequencerModels.swift in Sources */,
-				A100014 /* MIDIManager.swift in Sources */,
-				A100016 /* SequencerEngine.swift in Sources */,
-				A100018 /* StepGridView.swift in Sources */,
-				A10001A /* ControlPanelView.swift in Sources */,
-				A100001 /* MIDISequencerApp.swift in Sources */,
+				B1001003 /* ContentView.swift in Sources */,
+				B1001010 /* MusicTheory.swift in Sources */,
+				B1001012 /* SequencerModels.swift in Sources */,
+				B1001014 /* MIDIManager.swift in Sources */,
+				B1001016 /* SequencerEngine.swift in Sources */,
+				B1001018 /* StepGridView.swift in Sources */,
+				B100101A /* ControlPanelView.swift in Sources */,
+				B1001001 /* MIDISequencerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		A10001E /* Debug */ = {
+		B100101E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -246,7 +246,7 @@
 			};
 			name = Debug;
 		};
-		A10001F /* Release */ = {
+		B100101F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -302,7 +302,7 @@
 			};
 			name = Release;
 		};
-		A100021 /* Debug */ = {
+		B1001021 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -331,7 +331,7 @@
 			};
 			name = Debug;
 		};
-		A100022 /* Release */ = {
+		B1001022 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -363,25 +363,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A0FFFFD /* Build configuration list for PBXProject "MIDISequencer" */ = {
+		B1000FFD /* Build configuration list for PBXProject "MIDISequencer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A10001E /* Debug */,
-				A10001F /* Release */,
+				B100101E /* Debug */,
+				B100101F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A100020 /* Build configuration list for PBXNativeTarget "MIDISequencer" */ = {
+		B1001020 /* Build configuration list for PBXNativeTarget "MIDISequencer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A100021 /* Debug */,
-				A100022 /* Release */,
+				B1001021 /* Debug */,
+				B1001022 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = A0FFFFA /* Project object */;
+	rootObject = B1000FFA /* Project object */;
 }
