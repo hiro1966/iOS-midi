@@ -15,7 +15,6 @@
 		C1001014 /* MIDIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1001013 /* MIDIManager.swift */; };
 		C1001016 /* SequencerEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1001015 /* SequencerEngine.swift */; };
 		C1001018 /* StepGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1001017 /* StepGridView.swift */; };
-		C100101A /* ControlPanelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1001019 /* ControlPanelView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,7 +27,6 @@
 		C1001013 /* MIDIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MIDIManager.swift; sourceTree = "<group>"; };
 		C1001015 /* SequencerEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SequencerEngine.swift; sourceTree = "<group>"; };
 		C1001017 /* StepGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepGridView.swift; sourceTree = "<group>"; };
-		C1001019 /* ControlPanelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlPanelView.swift; sourceTree = "<group>"; };
 		C100101B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -86,7 +84,6 @@
 			children = (
 				C1001002 /* ContentView.swift */,
 				C1001017 /* StepGridView.swift */,
-				C1001019 /* ControlPanelView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -175,7 +172,6 @@
 				C1001014 /* MIDIManager.swift in Sources */,
 				C1001016 /* SequencerEngine.swift in Sources */,
 				C1001018 /* StepGridView.swift in Sources */,
-				C100101A /* ControlPanelView.swift in Sources */,
 				C1001001 /* MIDISequencerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
