@@ -33,7 +33,7 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		B1000FFC /* Frameworks */ = {
+		B1002001 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -107,9 +107,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B1001020 /* Build configuration list for PBXNativeTarget "MIDISequencer" */;
 			buildPhases = (
-				B1000FFB /* Sources */,
-				B1000FFC /* Frameworks */,
-				B1000FFD /* Resources */,
+				B1002003 /* Sources */,
+				B1002001 /* Frameworks */,
+				B1002002 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -154,7 +154,7 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		B1000FFD /* Resources */ = {
+		B1002002 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -165,7 +165,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		B1000FFB /* Sources */ = {
+		B1002003 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
